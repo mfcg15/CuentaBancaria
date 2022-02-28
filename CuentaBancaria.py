@@ -32,8 +32,8 @@ class CuentaBancaria:
         return self
     
     @classmethod
-    def mostrar_informacion_banco(self):
-        for cuenta in self.todas_las_cuentas:
+    def mostrar_informacion_banco(cls):
+        for cuenta in cls.todas_las_cuentas:
             cuenta.mostrar_info_cuenta()
 
 cuenta1 = CuentaBancaria(10)
